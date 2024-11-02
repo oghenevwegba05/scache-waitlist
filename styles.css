@@ -1,159 +1,99 @@
-/* General layout */
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
 .waitlist-container {
     text-align: center;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
 }
 
 /* Logo Text */
 .logo-text {
+    font-size: 2rem;
     font-weight: bold;
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 10px;
+    color: #333333;
+    margin-bottom: 1rem;
 }
 
-/* Waitlist Intro Text */
+/* Introductory Text */
 .waitlist-intro {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 1.5rem;
 }
 
-/* Form layout */
+/* Form Styling */
 .waitlist-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 1rem;
 }
 
-/* Email Input */
 .email-input {
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
     outline: none;
+    transition: border-color 0.3s;
 }
 
 .email-input:focus {
-    border-color: #333;
+    border-color: #999999;
 }
 
-/* Join Waitlist Button */
 .join-waitlist-button {
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 0.75rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: #fff;
-    background-color: #333;
+    color: #ffffff;
+    background-color: #333333;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .join-waitlist-button:hover {
-    background-color: #555;
+    background-color: #555555;
 }
 
-/* Social Media Icons */
+/* Social Icons */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    font-size: 24px;
-    margin-top: 20px;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 .icon {
-    color: #333;
-    text-decoration: none;
+    font-size: 1.5rem;
+    color: #333333;
+    transition: color 0.3s;
 }
 
 .icon:hover {
-    color: #e60023;
+    color: #555555;
 }
 
-/* Custom color for each icon */
-.icon.pinterest {
-    color: #e60023;
-}
-
-.icon.tiktok {
-    color: #000;
-}
-
-.icon.instagram {
-    color: #C13584;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-    .waitlist-container {
-        padding: 15px;
-        max-width: 400px;
-    }
-
-    .logo-text {
-        font-size: 32px;
-    }
-
-    .join-waitlist-button {
-        font-size: 14px;
-    }
-
-    .social-icons {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 768px) {
-    .waitlist-container {
-        padding: 10px;
-        max-width: 90%;
-    }
-
-    .logo-text {
-        font-size: 28px;
-    }
-
-    .waitlist-intro {
-        font-size: 16px;
-    }
-
-    .join-waitlist-button {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
-
-    .social-icons {
-        font-size: 20px;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-text {
-        font-size: 24px;
-    }
-
-    .waitlist-intro {
-        font-size: 14px;
-    }
-
-    .join-waitlist-button {
-        font-size: 12px;
-        padding: 8px 16px;
-    }
-
-    .social-icons {
-        font-size: 18px;
-    }
-}
+/* Icon Colors */
+.icon.pinterest { color: #E60023; }
+.icon.instagram { color: #C13584; }
+.icon.tiktok { color: #000000; }
