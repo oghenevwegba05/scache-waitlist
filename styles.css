@@ -1,74 +1,15 @@
-/* Container and general layout */
-.waitlist-container {
-    text-align: center;
-    padding: 40px;
-    font-family: Arial, sans-serif;
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #f9f9f9; /* Light background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Logo Text */
-.logo-text {
-    font-weight: bold;
-    font-size: 36px;
-    color: #333; /* Adjust color to your preference */
-    margin-bottom: 10px;
-}
-
-/* Waitlist Intro Text */
-.waitlist-intro {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Join Waitlist Button */
-.join-waitlist-button {
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #333; /* Button color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.join-waitlist-button:hover {
-    background-color: #555; /* Darker color on hover */
-}
-
-/* Social Media Icons */
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    font-size: 24px; /* Size of the icons */
+    text-align: center;
     margin-top: 20px;
 }
 
-.icon {
-    color: #333; /* Default icon color */
+.social-icons a {
+    margin: 0 10px;
     text-decoration: none;
+    color: #333; /* Default color */
+    font-size: 24px; /* Size of the icons */
 }
 
-.icon:hover {
-    color: #e60023; /* Hover color for all icons */
-}
-
-/* Custom color for each icon (optional) */
-.icon.pinterest {
-    color: #e60023; /* Pinterest red */
-}
-
-.icon.tiktok {
-    color: #000; /* TikTok black */
-}
-
-.icon.instagram {
-    color: #C13584; /* Instagram pinkish-purple */
+.social-icons a:hover {
+    color: #5cb85c; /* Change color on hover */
 }
